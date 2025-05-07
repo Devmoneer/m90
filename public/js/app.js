@@ -181,3 +181,21 @@ function hideError(input) {
         errorSpan.remove();
     }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const inputs = document.querySelectorAll('input, textarea, select');
+    
+    inputs.forEach(input => {
+      input.addEventListener('focus', function() {
+        const viewport = document.querySelector('meta[name="viewport"]');
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no');
+      });
+  
+      input.addEventListener('blur', function() {
+        const viewport = document.querySelector('meta[name="viewport"]');
+        viewport.setAttribute('content', 'width=device-width, initial-scale=1.0');
+      });
+    });
+  });
+
+  
