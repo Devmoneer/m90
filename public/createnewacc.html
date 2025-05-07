@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>بازارێ تە | Sign Up</title>
+    <link rel="stylesheet" href="../src/styles/main.css">
+</head>
+<body>
+    <div class="language-switcher">
+        <button class="lang-btn" data-lang="en">English</button>
+        <button class="lang-btn" data-lang="ar">العربية</button>
+        <button class="lang-btn" data-lang="ckb">سۆرانی</button>
+        <button class="lang-btn" data-lang="badini">بادینی</button>
+    </div>
+
+    <div class="login-box">
+        <h2 data-translate="signup_title">تۆمارکردن</h2>
+        <form>
+            <div class="input-group">
+                <label for="username" data-translate="username">ناوی بەکارهێنەر</label>
+                <input class="inputs" type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="email" data-translate="email">ئیمەیڵ</label>
+                <input class="inputs" type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password" data-translate="password">وشەی نهێنی</label>
+                <input class="inputs" type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="confirm-password" data-translate="confirm_password">دووبارەکردنەوەی وشەی نهێنی</label>
+                <input class="inputs" type="password" id="confirm-password" name="confirm-password" required>
+            </div>
+            <button type="submit" data-translate="signup_button">تۆمارکردن</button>
+            <div class="links">
+                <a href="index.html" data-translate="already_have_account">هەژمارت هەیە؟ چوونەژوورەوە</a>
+            </div>
+        </form>
+    </div>
+
+    
+    <script src="../src/app.js"></script>
+</body>
+</html>
